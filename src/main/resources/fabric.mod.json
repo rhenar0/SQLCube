@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "id": "SQLCube",
+  "version": "${version}",
+  "name": "SQLCube",
+  "description": "Library mod used for create SQLite DB and manipulate it",
+  "authors": [
+    "Rhenar"
+  ],
+  "contact": {
+    "website": "https://github.com/rhenar/",
+    "repo": "https://github.com/rhenar/SQLCube"
+  },
+  "license": "All-Rights-Reserved",
+  "icon": "assets/SQLCube/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "client": [
+      "blueproject.sqlcube.client.SQLCubeClient"
+    ],
+    "main": [
+      "blueproject.sqlcube.SQLCube"
+    ]
+  },
+  "mixins": [
+    "SQLCube.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "fabric": "*",
+    "minecraft": "${minecraft_version}"
+  }
+}
